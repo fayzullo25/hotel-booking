@@ -29,7 +29,7 @@ const AllRooms = () => {
               {/* room amineties */}
               <div>
                 {room.amenities.map((item, index) => (
-                  <img src={facilityIcons[item]} alt={item} />
+                  <img key={index} src={facilityIcons[item]} alt={item} />
                 ))}
               </div>
             </div>
